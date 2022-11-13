@@ -19,7 +19,7 @@ procedure pAppOnCreate(PEnv: PJNIEnv; this: JObject; context: JObject;
   layout: JObject; intent: JObject); cdecl;
 begin
   Java_Event_pAppOnCreate(PEnv, this, context, layout, intent); 
-    AndroidModule1.init;
+    AndroidModule1.Reinit;
 end;
 
 { Class:     io_github_felipebastosweb_appskeleton_Controls
@@ -406,140 +406,140 @@ begin
 end;
 
 const NativeMethods: array[0..44] of JNINativeMethod = (
-    (name: 'pAppOnCreate';
+   (name: 'pAppOnCreate';
     signature: '(Landroid/content/Context;Landroid/widget/RelativeLayout;'
       +'Landroid/content/Intent;)V';
     fnPtr: @pAppOnCreate; ),
-    (name: 'pAppOnScreenStyle';
+   (name: 'pAppOnScreenStyle';
     signature: '()I';
     fnPtr: @pAppOnScreenStyle; ),
-    (name: 'pAppOnNewIntent';
+   (name: 'pAppOnNewIntent';
     signature: '(Landroid/content/Intent;)V';
     fnPtr: @pAppOnNewIntent; ),
-    (name: 'pAppOnDestroy';
+   (name: 'pAppOnDestroy';
     signature: '()V';
     fnPtr: @pAppOnDestroy; ),
-    (name: 'pAppOnPause';
+   (name: 'pAppOnPause';
     signature: '()V';
     fnPtr: @pAppOnPause; ),
-    (name: 'pAppOnRestart';
+   (name: 'pAppOnRestart';
     signature: '()V';
     fnPtr: @pAppOnRestart; ),
-    (name: 'pAppOnResume';
+   (name: 'pAppOnResume';
     signature: '()V';
     fnPtr: @pAppOnResume; ),
-    (name: 'pAppOnStart';
+   (name: 'pAppOnStart';
     signature: '()V';
     fnPtr: @pAppOnStart; ),
-    (name: 'pAppOnStop';
+   (name: 'pAppOnStop';
     signature: '()V';
     fnPtr: @pAppOnStop; ),
-    (name: 'pAppOnBackPressed';
+   (name: 'pAppOnBackPressed';
     signature: '()V';
     fnPtr: @pAppOnBackPressed; ),
-    (name: 'pAppOnRotate';
+   (name: 'pAppOnRotate';
     signature: '(I)I';
     fnPtr: @pAppOnRotate; ),
-    (name: 'pAppOnUpdateLayout';
+   (name: 'pAppOnUpdateLayout';
     signature: '()V';
     fnPtr: @pAppOnUpdateLayout; ),
-    (name: 'pAppOnConfigurationChanged';
+   (name: 'pAppOnConfigurationChanged';
     signature: '()V';
     fnPtr: @pAppOnConfigurationChanged; ),
-    (name: 'pAppOnActivityResult';
+   (name: 'pAppOnActivityResult';
     signature: '(IILandroid/content/Intent;)V';
     fnPtr: @pAppOnActivityResult; ),
-    (name: 'pAppOnCreateOptionsMenu';
+   (name: 'pAppOnCreateOptionsMenu';
     signature: '(Landroid/view/Menu;)V';
     fnPtr: @pAppOnCreateOptionsMenu; ),
-    (name: 'pAppOnClickOptionMenuItem';
+   (name: 'pAppOnClickOptionMenuItem';
     signature: '(Landroid/view/MenuItem;ILjava/lang/String;Z)V';
     fnPtr: @pAppOnClickOptionMenuItem; ),
-    (name: 'pAppOnPrepareOptionsMenu';
+   (name: 'pAppOnPrepareOptionsMenu';
     signature: '(Landroid/view/Menu;I)Z';
     fnPtr: @pAppOnPrepareOptionsMenu; ),
-    (name: 'pAppOnPrepareOptionsMenuItem';
+   (name: 'pAppOnPrepareOptionsMenuItem';
     signature: '(Landroid/view/Menu;Landroid/view/MenuItem;I)Z';
     fnPtr: @pAppOnPrepareOptionsMenuItem; ),
-    (name: 'pAppOnCreateContextMenu';
+   (name: 'pAppOnCreateContextMenu';
     signature: '(Landroid/view/ContextMenu;)V';
     fnPtr: @pAppOnCreateContextMenu; ),
-    (name: 'pAppOnClickContextMenuItem';
+   (name: 'pAppOnClickContextMenuItem';
     signature: '(Landroid/view/MenuItem;ILjava/lang/String;Z)V';
     fnPtr: @pAppOnClickContextMenuItem; ),
-    (name: 'pOnDraw';
+   (name: 'pOnDraw';
     signature: '(J)V';
     fnPtr: @pOnDraw; ),
-    (name: 'pOnTouch';
+   (name: 'pOnTouch';
     signature: '(JIIFFFF)V';
     fnPtr: @pOnTouch; ),
-    (name: 'pOnClickGeneric';
+   (name: 'pOnClickGeneric';
     signature: '(J)V';
     fnPtr: @pOnClickGeneric; ),
-    (name: 'pAppOnSpecialKeyDown';
+   (name: 'pAppOnSpecialKeyDown';
     signature: '(CILjava/lang/String;)Z';
     fnPtr: @pAppOnSpecialKeyDown; ),
-    (name: 'pOnDown';
+   (name: 'pOnDown';
     signature: '(J)V';
     fnPtr: @pOnDown; ),
-    (name: 'pOnUp';
+   (name: 'pOnUp';
     signature: '(J)V';
     fnPtr: @pOnUp; ),
-    (name: 'pOnClick';
+   (name: 'pOnClick';
     signature: '(JI)V';
     fnPtr: @pOnClick; ),
-    (name: 'pOnLongClick';
+   (name: 'pOnLongClick';
     signature: '(J)V';
     fnPtr: @pOnLongClick; ),
-    (name: 'pOnDoubleClick';
+   (name: 'pOnDoubleClick';
     signature: '(J)V';
     fnPtr: @pOnDoubleClick; ),
-    (name: 'pOnChange';
+   (name: 'pOnChange';
     signature: '(JLjava/lang/String;I)V';
     fnPtr: @pOnChange; ),
-    (name: 'pOnChanged';
+   (name: 'pOnChanged';
     signature: '(JLjava/lang/String;I)V';
     fnPtr: @pOnChanged; ),
-    (name: 'pOnEnter';
+   (name: 'pOnEnter';
     signature: '(J)V';
     fnPtr: @pOnEnter; ),
-    (name: 'pOnBackPressed';
+   (name: 'pOnBackPressed';
     signature: '(J)V';
     fnPtr: @pOnBackPressed; ),
-    (name: 'pOnClose';
+   (name: 'pOnClose';
     signature: '(J)V';
     fnPtr: @pOnClose; ),
-    (name: 'pAppOnViewClick';
+   (name: 'pAppOnViewClick';
     signature: '(Landroid/view/View;I)V';
     fnPtr: @pAppOnViewClick; ),
-    (name: 'pAppOnListItemClick';
+   (name: 'pAppOnListItemClick';
     signature: '(Landroid/widget/AdapterView;Landroid/view/View;II)V';
     fnPtr: @pAppOnListItemClick; ),
-    (name: 'pOnFlingGestureDetected';
+   (name: 'pOnFlingGestureDetected';
     signature: '(JI)V';
     fnPtr: @pOnFlingGestureDetected; ),
-    (name: 'pOnPinchZoomGestureDetected';
+   (name: 'pOnPinchZoomGestureDetected';
     signature: '(JFI)V';
     fnPtr: @pOnPinchZoomGestureDetected; ),
-    (name: 'pOnLostFocus';
+   (name: 'pOnLostFocus';
     signature: '(JLjava/lang/String;)V';
     fnPtr: @pOnLostFocus; ),
-    (name: 'pOnFocus';
+   (name: 'pOnFocus';
     signature: '(JLjava/lang/String;)V';
     fnPtr: @pOnFocus; ),
-    (name: 'pOnBeforeDispatchDraw';
+   (name: 'pOnBeforeDispatchDraw';
     signature: '(JLandroid/graphics/Canvas;I)V';
     fnPtr: @pOnBeforeDispatchDraw; ),
-    (name: 'pOnAfterDispatchDraw';
+   (name: 'pOnAfterDispatchDraw';
     signature: '(JLandroid/graphics/Canvas;I)V';
     fnPtr: @pOnAfterDispatchDraw; ),
-    (name: 'pOnLayouting';
+   (name: 'pOnLayouting';
     signature: '(JZ)V';
     fnPtr: @pOnLayouting; ),
-    (name: 'pAppOnRequestPermissionResult';
+   (name: 'pAppOnRequestPermissionResult';
     signature: '(ILjava/lang/String;I)V';
     fnPtr: @pAppOnRequestPermissionResult; ),
-    (name: 'pOnRunOnUiThread';
+   (name: 'pOnRunOnUiThread';
     signature: '(JI)V';
     fnPtr: @pOnRunOnUiThread; )
 );
@@ -572,16 +572,16 @@ begin
   
   if (VM^).GetEnv(VM, @PEnv, Result) <> JNI_OK then
   begin
-    result := JNI_ERR;
-    exit;
+   result := JNI_ERR;
+   exit;
   end;
   
   if PEnv <> nil then
   begin
-      curEnv:= PJNIEnv(PEnv);
-      rc := RegisterNativeMethods(curEnv, 'io/github/felipebastosweb/'
-        +'appskeleton/Controls');
-      if (rc <> JNI_OK) then result := rc;
+     curEnv:= PJNIEnv(PEnv);
+     rc := RegisterNativeMethods(curEnv, 'io/github/felipebastosweb/'
+       +'appskeleton/Controls');
+     if (rc <> JNI_OK) then result := rc;
   end;
   gVM:= VM; {AndroidWidget.pas}
 end;

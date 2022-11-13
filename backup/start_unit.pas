@@ -17,13 +17,11 @@ type
 
   TAndroidModule1 = class(jForm)
     CheckBox1: jCheckBox;
-    Username: jEditText;
     Password: jEditText;
     RegisterButton: jButton;
     LoginButton: jButton;
     TextView1: jTextView;
     procedure PasswordFocus(Sender: TObject; textContent: string);
-    procedure UsernameFocus(Sender: TObject; textContent: string);
   private
     {private declarations}
   public
@@ -44,12 +42,6 @@ procedure TAndroidModule1.PasswordFocus(Sender: TObject; textContent: string);
 begin
   if Password.Text = 'Senha' then
      Password.Text := '';
-end;
-
-procedure TAndroidModule1.UsernameFocus(Sender: TObject; textContent: string);
-begin
-  if Username.Text = 'Usuário' then
-     Username := '';
 end;
 
 end.

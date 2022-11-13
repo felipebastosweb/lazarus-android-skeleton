@@ -15,18 +15,17 @@
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
-    <CustomData Count="11">
+    <CustomData Count="10">
       <Item0 Name="BuildSystem" Value="Ant"/>
       <Item1 Name="LAMW" Value="GUI"/>
-      <Item2 Name="LamwVersion" Value="0.8.6.1"/>
-      <Item3 Name="NdkApi" Value="android-22"/>
-      <Item4 Name="NdkPath" Value="C:\lamw_manager\LAMW\sdk\ndk-bundle\"/>
-      <Item5 Name="Package" Value="io.github.felipebastosweb.appskeleton"/>
-      <Item6 Name="SdkPath" Value="C:\lamw_manager\LAMW\sdk\"/>
-      <Item7 Name="StartModule" Value="AndroidModule1"/>
-      <Item8 Name="Support" Value="FALSE"/>
-      <Item9 Name="Theme" Value="DeviceDefault"/>
-      <Item10 Name="TryKotlin" Value="FALSE"/>
+      <Item2 Name="NdkApi" Value="android-22"/>
+      <Item3 Name="NdkPath" Value="C:\lamw_manager\LAMW\sdk\ndk-bundle\"/>
+      <Item4 Name="Package" Value="io.github.felipebastosweb.appskeleton"/>
+      <Item5 Name="SdkPath" Value="C:\lamw_manager\LAMW\sdk\"/>
+      <Item6 Name="StartModule" Value="AndroidModule1"/>
+      <Item7 Name="Support" Value="FALSE"/>
+      <Item8 Name="Theme" Value="DeviceDefault"/>
+      <Item9 Name="TryKotlin" Value="FALSE"/>
     </CustomData>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
@@ -54,7 +53,7 @@
         <IsPartOfProject Value="True"/>
         <ComponentName Value="AndroidModule1"/>
         <CustomData Count="1">
-          <Item0 Name="jControls" Value="jButton;jForm;jTextView"/>
+          <Item0 Name="jControls" Value="jForm"/>
         </CustomData>
       </Unit1>
     </Units>

@@ -124,7 +124,7 @@ object AndroidModule1: TAndroidModule1
     PosRelativeToParent = [rpCenterHorizontal]
     LayoutParamWidth = lpNineTenthsOfParent
     LayoutParamHeight = lpWrapContent
-    Text = 'Senha'
+    Text = 'Password'
     Alignment = taLeft
     InputTypeEx = itxText
     MaxTextLength = -1
@@ -144,42 +144,5 @@ object AndroidModule1: TAndroidModule1
     CaptureBackPressed = False
     GravityInParent = lgNone
     OnFocus = PasswordFocus
-  end
-  object Username: jEditText
-    MarginLeft = 5
-    MarginTop = 5
-    MarginRight = 5
-    MarginBottom = 5
-    Enabled = True
-    Left = 16
-    Top = 115
-    Width = 288
-    Height = 39
-    Visible = True
-    Anchor = Password
-    PosRelativeToAnchor = [raAbove]
-    PosRelativeToParent = [rpCenterHorizontal]
-    LayoutParamWidth = lpNineTenthsOfParent
-    LayoutParamHeight = lpWrapContent
-    Text = 'Usuário'
-    Alignment = taLeft
-    InputTypeEx = itxText
-    MaxTextLength = -1
-    BackgroundColor = colbrWhite
-    FontColor = colbrBlack
-    FontSize = 0
-    HintTextColor = colbrDefault
-    ScrollBarStyle = scrNone
-    MaxLines = 1
-    HorScrollBar = True
-    VerScrollBar = True
-    WrappingLine = False
-    Editable = True
-    FontSizeUnit = unitDefault
-    CloseSoftInputOnEnter = True
-    CapSentence = False
-    CaptureBackPressed = False
-    GravityInParent = lgNone
-    OnFocus = UsernameFocus
   end
 end
