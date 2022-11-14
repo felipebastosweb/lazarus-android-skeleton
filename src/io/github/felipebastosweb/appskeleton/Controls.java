@@ -1541,6 +1541,29 @@ public native void pOnHttpClientCodeResult(long pasobj, int code);
 public native void pOnHttpClientUploadProgress(long pasobj, long progress);
 public native void pOnHttpClientUploadFinished(long pasobj, int connectionStatusCode, String connectionStatusMessage, String fullFileName);
 
+public  java.lang.Object jListView_Create2(long pasobj,  int widget, String widgetTxt, Bitmap bmp, int txtDecorated, int itemLay, int textSizeDecorated, int textAlign, int textPosition) {
+  return (java.lang.Object)(new jListView(this.activity,this,pasobj,widget,widgetTxt,bmp,txtDecorated,itemLay,textSizeDecorated, textAlign, textPosition));
+}
+public  java.lang.Object jListView_Create3(long pasobj,  int widget, String widgetTxt, int txtDecorated, int itemLay, int textSizeDecorated, int textAlign, int textPosition) {
+  return (java.lang.Object)(new jListView(this.activity,this,pasobj,widget,widgetTxt, null,txtDecorated,itemLay,textSizeDecorated, textAlign, textPosition));
+}
+public native void pOnClickWidgetItem(long pasobj, int position, boolean checked);
+public native void pOnClickImageItem(long pasobj, int position);
+public native void pOnClickCaptionItem(long pasobj, int position, String caption);
+public native void pOnClickItemTextLeft(long pasobj, int position, String caption);
+public native void pOnClickItemTextCenter(long pasobj, int position, String caption);
+public native void pOnClickItemTextRight(long pasobj, int position, String caption);
+public native void pOnListViewLongClickCaptionItem(long pasobj, int position, String caption);
+public native int pOnListViewDrawItemCaptionColor(long pasobj, int position, String caption);
+public native String pOnListViewDrawItemCustomFont(long pasobj, int position, String caption);
+public native int pOnListViewDrawItemBackgroundColor(long pasobj, int position);
+public native Bitmap pOnListViewDrawItemBitmap(long pasobj, int position, String caption);
+public native void pOnWidgeItemLostFocus(long pasobj, int position, String widgetText);
+public native void pOnListViewScrollStateChanged(long pasobj, int firstVisibleItem, int visibleItemCount, int totalItemCount, boolean lastItemReached);
+public native int pOnListViewDrawItemWidgetTextColor(long pasobj, int position, String widgetText);
+public native String pOnListViewDrawItemWidgetText(long pasobj, int position, String widgetText);
+public native Bitmap pOnListViewDrawItemWidgetImage(long pasobj, int position, String widgetText);
+
 public java.lang.Object jLocation_jCreate(long _Self, long _TimeForUpdates, long _DistanceForUpdates, int _CriteriaAccuracy, int _MapType) {
    return (java.lang.Object)(new jLocation(this,_Self,_TimeForUpdates,_DistanceForUpdates,_CriteriaAccuracy, _MapType));
 }
@@ -1562,5 +1585,13 @@ public native void pOnSqliteDataAccessAsyncPostExecute(long pasobj, int count, S
 public  java.lang.Object jTextView_Create(long pasobj) {
   return (java.lang.Object)( new jTextView(this.activity,this,pasobj));
 }
+
+public  java.lang.Object jWebView_Create(long pasobj ) {
+   return (java.lang.Object)( new jWebView(this.activity,this,pasobj));
+}
+public native int pOnWebViewStatus(long pasobj, int EventType, String url);
+public native void pOnWebViewFindResultReceived(long pasobj, int findIndex, int findCount);
+public native void pOnWebViewEvaluateJavascriptResult(long pasobj, String data);
+public native boolean pOnWebViewReceivedSslError(long pasobj, String error, int primaryError);
 
 }

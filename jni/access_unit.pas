@@ -16,10 +16,7 @@ type
   { TAccessModule }
 
   TAccessModule = class(jForm)
-    httpClient: jHttpClient;
     locationGps: jLocation;
-    sqliteCursor: jSqliteCursor;
-    sqliteDataAccess: jSqliteDataAccess;
   private
     {private declarations}
   public

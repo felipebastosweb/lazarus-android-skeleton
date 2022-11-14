@@ -15,29 +15,6 @@ object AccessModule: TAccessModule
   AnimationDurationIn = 1500
   AnimationDurationOut = 1500
   AnimationMode = animNone
-  object sqliteCursor: jSqliteCursor
-    Left = 32
-    Top = 144
-  end
-  object sqliteDataAccess: jSqliteDataAccess
-    Cursor = sqliteCursor
-    ColDelimiter = '|'
-    RowDelimiter = '#'
-    DataBaseName = 'myData.db'
-    ReturnHeaderOnSelect = True
-    Left = 112
-    Top = 144
-  end
-  object httpClient: jHttpClient
-    CharSet = 'UTF-8'
-    IndexUrl = -1
-    AuthenticationMode = autNone
-    ResponseTimeout = 15000
-    ConnectionTimeout = 15000
-    UploadFormName = 'lamwFormUpload'
-    Left = 32
-    Top = 18
-  end
   object locationGps: jLocation
     MapType = mtRoadmap
     CriteriaAccuracy = crCoarse
